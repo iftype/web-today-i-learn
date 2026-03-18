@@ -1,148 +1,136 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="initial-scale=1, width=device-width" />
 
-    <!-- TODO: Open Graph 메타 태그를 설정하세요 -->
-    <!-- <meta property="og:title" content="페이지 제목" /> -->
-    <!-- <meta property="og:description" content="페이지 설명" /> -->
-    <!-- <meta property="og:image" content="./images/thumbnail.jpg" /> -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, width=device-width">
+  <title>Today I Learn - 나의 성장 기록</title>
 
-    <title>Today I Learn</title>
-    <link rel="stylesheet" href="./css/main.css" />
-    <script src="./js/index.js" defer></script>
-  </head>
-  <body>
-    <!-- 상단 내비게이션 -->
-    <nav class="top-nav">
-      <span class="nav-logo">My Page</span>
-      <ul class="nav-links">
-        <li><a href="#about">자기소개</a></li>
+  <meta property="og:title" content="나의 TIL 페이지">
+  <meta property="og:description" content="매일 배우고 성장하는 과정을 기록하는 개인 공간입니다.">
+  <meta property="og:image" content="images/og-image.jpg">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#profile">프로필</a></li>
         <li><a href="#gallery">갤러리</a></li>
-        <li><a href="#works">인생 작품</a></li>
-        <li><a href="#til">TIL</a></li>
+        <li><a href="#masterpiece">인생 작품</a></li>
+        <li><a href="#til">TIL 기록</a></li>
       </ul>
     </nav>
+  </header>
 
-    <!-- 프로필 히어로 -->
-    <section class="hero" id="about">
-      <div class="profile-card">
-        <div class="profile-image">
-          <!-- TODO: 프로필 이미지를 넣어주세요 -->
-          <!-- <img src="./images/profile.jpg" alt="프로필 사진" /> -->
-        </div>
-        <div class="profile-info">
-          <h1>닉네임</h1>
-          <p class="tagline">한 줄 소개를 작성해주세요.</p>
-        </div>
-      </div>
-    </section>
+  <main>
+    <section id="profile">
+      <h1>나를 소개합니다</h1>
+      <article class="profile-card">
+        <img src="images/profile.jpg" alt="나의 프로필 사진" width="200">
+        <h2>닉네임: 콘티</h2>
+        <p>끊임없이 질문하고 코드로 답을 찾아가는 프론트엔드 개발자 지망생입니다.</p>
+      </article>
 
-    <main>
-      <!-- 자기소개 -->
-      <section class="content-section">
-        <h2>자기소개</h2>
-        <p>자기소개를 작성해주세요.</p>
-        <!-- TODO: 소개 글 안에 블로그, GitHub 등 관련 링크를 <a> 태그로 연결하세요 -->
-      </section>
-
-      <!-- 기본 정보 -->
-      <section class="content-section" id="info">
-        <h2>기본 정보</h2>
-        <!-- TODO: 자신의 기본 정보를 표(<table>)로 정리하세요 -->
-        <table class="info-table">
+      <article>
+        <h3>상세 정보</h3>
+        <table border="1">
           <tr>
             <th>이름</th>
-            <td></td>
+            <td>콘티</td>
           </tr>
           <tr>
             <th>MBTI</th>
-            <td></td>
+            <td>INTP</td>
           </tr>
           <tr>
             <th>취미</th>
-            <td></td>
-          </tr>
-          <tr>
-            <th>좋아하는 음식</th>
-            <td></td>
+            <td>음악 감상</td>
           </tr>
         </table>
-      </section>
+      </article>
 
-      <!-- 나만의 갤러리 -->
-      <section class="content-section" id="gallery">
-        <h2>나만의 갤러리</h2>
-        <p class="section-desc">갤러리 부제를 작성해주세요. (예: 기억에 남는 여행지)</p>
-        <div class="gallery-grid">
-          <!-- TODO: 9장의 이미지를 배치하세요 -->
-          <!--
-          <img src="./images/gallery-1.jpg" alt="갤러리 이미지 1" />
-          <img src="./images/gallery-2.jpg" alt="갤러리 이미지 2" />
-          ...
-          -->
-        </div>
-      </section>
+      <article>
+        <h3>자기소개</h3>
+        <p>
+          저는 인터렉티브한 효과나, 새로운 프레임워크에 관심이 많으며 <a href="https://github.com/iftype" target="_blank">GitHub</a> 또는
+          <a href="https://iftype.github.io" target="_blank">기술 블로그</a>에서 확인하실 수 있습니다.
+        </p>
+      </article>
+    </section>
 
-      <!-- 나를 울린 인생 작품 -->
-      <section class="content-section" id="works">
-        <h2>나를 울린 인생 작품</h2>
-        <div class="works-list">
-          <!-- TODO: 최소 2가지 작품을 소개하세요 -->
-          <!-- TODO: 작품 중 하나는 <video> 또는 <iframe>으로 영상을 삽입하세요 -->
-          <article class="work-card">
-            <div class="work-thumbnail">
-              <!-- 작품 이미지 -->
-            </div>
-            <div class="work-info">
-              <h3>작품 제목</h3>
-              <p>작품에 대한 설명을 작성해주세요.</p>
-            </div>
-          </article>
-        </div>
-      </section>
+    <hr>
 
-      <!-- TIL (Today I Learned) -->
-      <section class="content-section" id="til">
-        <h2>TIL</h2>
-        <p class="section-desc">오늘 새롭게 배운 것들을 기록합니다.</p>
+    <section id="gallery" class="content-section">
+      <h2>나만의 갤러리</h2>
+      <p class="section-desc">기억에 남는 순간들을 기록합니다.</p>
+      <div class="gallery-grid">
+        <img src="./images/photo1.jpg" alt="갤러리1">
+        <img src="./images/photo2.jpg" alt="갤러리2">
+        <img src="./images/photo3.jpg" alt="갤러리3">
+        <img src="./images/photo4.jpg" alt="갤러리4">
+        <img src="./images/photo5.jpg" alt="갤러리5">
+        <img src="./images/photo6.jpg" alt="갤러리6">
+        <img src="./images/photo7.jpg" alt="갤러리7">
+        <img src="./images/photo8.jpg" alt="갤러리8">
+        <img src="./images/photo9.jpg" alt="갤러리9">
+      </div>
+    </section>
+    <hr>
 
-        <!-- TIL 작성 폼 -->
-        <form class="til-form" id="til-form">
-          <div class="form-group">
-            <label for="til-date">날짜</label>
-            <input type="date" id="til-date" name="date" required />
-          </div>
-          <div class="form-group">
-            <label for="til-title">제목</label>
-            <input type="text" id="til-title" name="title" placeholder="학습 주제를 입력하세요" required />
-          </div>
-          <div class="form-group">
-            <label for="til-content">내용</label>
-            <textarea id="til-content" name="content" placeholder="오늘 배운 내용을 정리해주세요" required></textarea>
-          </div>
-          <div class="form-actions">
-            <button type="submit">등록</button>
-            <button type="reset">초기화</button>
-          </div>
-        </form>
+    <section id="masterpiece">
+      <h2>나를 울린 인생 작품</h2>
+      <ul>
+        <li>
+          <strong>첫 키스만 50번째</strong>
+          <p>코미디 영화지만 씁쓸한 뒷 맛</p>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/54Sq4cQaSO0?si=oZxAci2ncO-4jcXl"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </li>
+        <li>
+          <strong>우리들의 비일상은 지금부터다!</strong>
+          <p>히나마츠리로 유명한 작가, 오오타케 마사오의 단편작품이다. 세밀하게 짜여진 개그가 재밌다</p>
+        </li>
+      </ul>
+    </section>
 
-        <!-- TIL 목록: 폼으로 등록하면 여기에 항목이 추가됩니다 -->
-        <div class="til-list" id="til-list">
-          <!-- 아래는 예시 항목입니다. 자유롭게 수정하거나 삭제하세요 -->
-          <article class="til-item">
-            <time>2026-03-15</time>
-            <h3>HTML 시멘틱 태그</h3>
-            <p>header, nav, main, section, article, footer 등 시멘틱 태그의 역할과 사용법을 배웠다.</p>
-          </article>
-        </div>
-      </section>
+    <hr>
 
-    </main>
+    <section id="til">
+      <h2>Today I Learned</h2>
+      <div id="til-list">
+        <article>
+          <h3><time datetime="2026-03-18">2026년 3월 18일</time> DIP에 대해서</h3>
+          <p>DI(의존성주입)은 DIP를 이루기 위한 수단이라고 들었다</p>
+        </article>
+      </div>
 
-    <footer>
-      <p>&copy; My Page</p>
-    </footer>
-  </body>
+      <form id="til-form">
+        <fieldset>
+          <legend>새 TIL 등록하기</legend>
+          <label for="til-date">날짜:</label>
+          <input type="date" id="til-date" required>
+
+          <label for="til-title">주제:</label>
+          <input type="text" id="til-title" placeholder="학습 주제를 입력하세요" required>
+
+          <label for="til-content">내용:</label>
+          <textarea id="til-content" rows="4" placeholder="오늘 무엇을 배웠나요?" required></textarea>
+
+          <button type="submit">등록하기</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 My TIL Page. All rights reserved.</p>
+  </footer>
+  <script src="./app/script.js"></script>
+</body>
+
 </html>

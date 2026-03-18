@@ -1,3 +1,66 @@
 @import "./reset.css";
 @import "./common.css";
 @import "./wiki-layout.css";
+
+/* TIL 등록 폼 */
+.til-form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.til-form label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #636e72;
+}
+
+.til-form input,
+.til-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #dfe6e9;
+  border-radius: 8px;
+  background-color: #fbfbfb;
+  font-family: inherit;
+}
+
+.til-form button[type="submit"] {
+  margin-top: 10px;
+  padding: 15px;
+  background-color: #0984e3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* 추가된 TIL 리스트 아이템 */
+.til-item {
+  background: white;
+  padding: 20px;
+  margin-top: 15px;
+  border-radius: 12px;
+  border-left: 4px solid #0984e3;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+}
+
+.til-item time {
+  font-size: 0.85rem;
+  color: #999;
+}
+
+/* 영상/아이프레임 */
+iframe,
+video {
+  width: 100%;
+  height: 394px;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
